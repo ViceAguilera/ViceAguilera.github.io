@@ -1,19 +1,19 @@
-import { Navbar, Button } from 'flowbite-react'
-import { FaMoon } from 'react-icons/fa'
+import { Navbar } from 'flowbite-react'
+import { ModeToggle } from '../assets/ButtonColor'
 
 export default function Header () {
   return (
-    <div className='drop-shadow-xl font-mono bg-slate-300 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-black'>
-      <Navbar fluid={true} rounded={false}>
+    <div className='drop-shadow-xl font-mono bg-slate-300 dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-white'>
+      <Navbar fluid={true} rounded={false} className='dark:bg-black'>
         <Navbar.Brand href='/'>
           <span className='lg:ml-20 self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
             SiriusIO Portafolio
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
-          <Button className='w-12 h-10 lg:justify-center sm:inline my-1 mr-4' color='gray' pill>
-            <FaMoon />
-          </Button>
+        <div className='flex items-center'>
+          <ModeToggle />
+        </div>
         <Navbar.Collapse>
           <ul className='flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
             <li>

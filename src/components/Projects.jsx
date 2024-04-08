@@ -1,4 +1,4 @@
-import ProjectCard from '../assets/projectCard'
+import ProjectCard from '../assets/ProjectCard'
 
 export default function Projects () {
   const projects = [
@@ -9,7 +9,7 @@ export default function Projects () {
       repoUrl: 'https://github.com/ViceAguilera/detector-script-tesis.git'
     },
     {
-      title: 'YOLOv8 simplificado',
+      title: 'Entrenamiento YOLOv8',
       description: 'Código de entrenamiento de modelos de detección de objetos con YOLOv8 en PyTorch.',
       imgUrl: '/projects/yolo_tesis.png',
       repoUrl: 'https://github.com/ViceAguilera/Train-model-yolov8.git'
@@ -25,9 +25,9 @@ export default function Projects () {
   return (
     <div
     id='projects'
-    className='min-h-screen pt-16 text-black bg-white flex flex-col items-center justify-center font-mono'>
+    className='min-h-screen pt-16 text-black bg-white dark:bg-gray-900 flex flex-col items-center justify-center font-mono'>
     <div className='max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-16 py-12'>
-      <h1 className='text-center mb-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl'>
+      <h1 className='text-black dark:text-white text-center mb-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl'>
         Proyectos<span className='text-blue-600'>.</span>
       </h1>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="hacker.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Vicente Aguilera</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll('a[href^="#"]');
+        for (const link of links) {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = event.currentTarget.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          });
+        }
+      });
+    </script>
+  </body>
+  
+</html>

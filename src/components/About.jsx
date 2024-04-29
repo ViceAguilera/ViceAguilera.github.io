@@ -17,6 +17,9 @@ export default function About () {
             <h3 className='text-2xl mb-4 font-extrabold flex items-center'>
               <BriefcaseIcon className='w-6 h-6 mr-2' /> Experiencia Laboral
             </h3>
+            <p className='font-bold'>Gatblac</p>
+            <p>Software Developer</p>
+            <p>Abril 2024 - Actualidad</p>
             <p className='font-bold'>NTT DATA Latam & Europe</p>
             <p>Práctica Profesional Digital Experience</p>
             <p>Enero 2023 - Marzo 2023</p>

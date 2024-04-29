@@ -9,7 +9,7 @@ export default function Contact () {
   return (
     <div
       id='contact'
-      className='min-h-screen pt-16 bg-indigo-950 dark:bg-gray-900 flex flex-col font-mono items-center justify-center'>
+      className='min-h-screen pt-16 border-4 border-white bg-indigo-950 dark:bg-gray-900 flex flex-col font-mono items-center justify-center'>
       <div className='max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-16 py-12 w-full'>
         <h1 className='text-center mb-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white'>
           Contactos<span className='text-blue-600'>.</span>

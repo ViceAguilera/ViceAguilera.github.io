@@ -1,0 +1,43 @@
+<div class="main">
+    <aside class="presentation">
+        <div>
+            <img class="foto" src="Vicente.jpg" alt="Vicente">
+            <h4>Vicente Aguilera Arias</h4>
+            <h6>Software Developer</h6>
+        </div>
+        <div class="info">
+            <hr class="solid">
+            <p><mat-icon>mail</mat-icon> {{mail}} </p>
+            <p><mat-icon>phone</mat-icon> {{phone}} </p>
+            <p><mat-icon>location_on</mat-icon> {{location}} </p>
+        </div>
+        <div class="rrss">
+            <img class="github" src="github.svg" alt="github">
+            <img class="linkedin" src="linkedin.svg" alt="linkedin">
+        </div>
+    </aside>
+    <main class="home">
+        <div class="header">
+            <div class="tab" (selectedIndexChange)="setActivateTab(0)">
+                <div class="about" label="Sobre mí" (click)="setActivateTab(0)" [class.active]="activateTab === 0">Sobre mí</div>
+                <div class="curriculum" label="Currículum" (click)="setActivateTab(1)" [class.active]="activateTab === 1">Currículum</div>
+                <div class="portfolio" label="Portafolio" (click)="setActivateTab(2)" [class.active]="activateTab === 2">Portafolio</div>
+                <div class="contact" label="Contacto" (click)="setActivateTab(3)" [class.active]="activateTab === 3">Contacto</div>
+            </div>
+        </div>
+        <div class="content">
+            <ng-container *ngIf="activateTab === 0">
+                <app-about></app-about>
+            </ng-container>
+            <ng-container *ngIf="activateTab === 1">
+                <app-curriculum></app-curriculum>
+            </ng-container>
+            <ng-container *ngIf="activateTab === 2">
+                <app-portfolio></app-portfolio>
+            </ng-container>
+            <ng-container *ngIf="activateTab === 3">
+                <app-contact></app-contact>
+            </ng-container>
+        </div>
+    </main>
+</div>
